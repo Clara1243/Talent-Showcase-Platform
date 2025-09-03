@@ -11,6 +11,7 @@ Frontend: HTML, CSS, JavaScript (as requested by the user)
 Backend: PHP
 
 Database: MySQL
+
 ---
 ## Key Features
 
@@ -59,7 +60,10 @@ FAQ Section: A dedicated FAQ table helps users quickly find answers to common qu
 --- 
 
 ## Group Member
-1. Liew Wen Xing | Admin & User Feedback, Admin Dashbboard, Admin & User Discussion, Logout Handle
-2. Tai Qi Tong | User Registration, User & Admin Login, User & Admin Profile, Password hashing and validation, Update Profile
-3. Dharmendiran Sukumaran | Catalog, Add to Cart, View Cart, Checkout item, Upload product, Status of Products
-4. Amirtha A/P Sathies Kumar | News & Announcement (User & Admin), FAQ
+**1. Liew Wen Xing** | Admin & User Feedback, Admin Dashbboard, Admin & User Discussion, Logout Handle
+
+**2. Tai Qi Tong** | User Registration, User & Admin Login, User & Admin Profile, Password hashing and validation, Update Profile
+
+**3. Dharmendiran Sukumaran** | Catalog, Add to Cart, View Cart, Checkout item, Upload product, Status of Products
+
+**4. Amirtha A/P Sathies Kumar** | News & Announcement (User & Admin), FAQ
