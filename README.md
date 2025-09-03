@@ -1,7 +1,9 @@
 # Talent-Showcase-Platform
+
 Group assignment project for subject Web Application Development.
 
 This project is a web application designed to serve as a centralized platform for students at Multimedia University (MMU) to showcase their talents, creative works, and services. The portal aims to foster a creative community and provide students with opportunities to monetize their skills and build an online presence.
+
 ---
 ## Technology Stack
 Frontend: HTML, CSS, JavaScript (as requested by the user)
