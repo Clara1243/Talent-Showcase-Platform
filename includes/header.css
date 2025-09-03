@@ -1,0 +1,325 @@
+body {
+    margin: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F5F5F5;
+    padding: 20px 30px;
+    color: #004EA2;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.24);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  width: 200px;
+  height: auto;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.nav-links .nav-item,
+.nav-links .dropbtn {
+    margin: 0 15px;
+    font-weight: 400;
+    font-size: 14px;
+    display: inline-block;
+    min-width: 6rem;
+    text-align: center;
+    transition: font-weight 0.2s;
+    position: relative;
+    overflow: hidden;
+}
+.nav-links a{
+    text-decoration: none;
+    color: #004EA2;
+}
+.nav-links .nav-item::after, .nav-links .dropbtn::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 2px;
+    background: #b8191c;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+    transform-origin: left;
+}
+.nav-links .nav-item:hover, .nav-links .dropbtn:hover {
+    font-weight: 700;
+}
+.nav-links .nav-item:hover::after {
+    transform: scaleX(1);
+}
+.nav-links .dropdown {
+    position: relative;
+    display: inline-flex;
+}
+.nav-links .dropdown-content {
+    list-style-type: none;
+    margin: 0;
+    padding: 1rem 0rem 1rem 0rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.24);
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #FFFFFF;
+    min-width: 160px;
+}
+.nav-links .dropdown-content a {
+    color: #004EA2;
+    padding: 10px 15px;
+    margin:0;
+    text-decoration: none;
+    display: flex;
+    text-align: left;
+    font-size: 14px;
+    background-color: #FFFFFF;
+    font-weight: 400; /* keep default */
+    transition: background-color 0.3s, color 0.3s;
+}
+.nav-links .dropdown span{
+        font-size: 18px;
+        padding: 0;
+        margin:0;
+}
+.nav-links .dropdown-content a:hover {
+    background-color: #7375773b;
+    color: #004EA2;
+}
+.nav-links .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.nav-links .hamburger {
+    display: none;
+}
+
+.icon .icons-drpbtn {
+    margin: 0 15px;
+    font-weight: 400;
+    font-size: 14px;
+    display: inline-block;
+    min-width: 4rem;
+    text-align: center;
+    transition: font-weight 0.2s;
+    position: relative;
+    overflow: hidden;
+}
+
+.icon a {
+    text-decoration: none;
+    color: #004EA2;
+}
+
+.icon .icons-drpbtn::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 2px;
+    background: #b8191c;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+    transform-origin: left;
+}
+.icon .icons-drpbtn:hover {
+    font-weight: 700;
+}
+
+.icon .profile {
+    position: relative;
+    display: inline-flex;
+}
+.icon .profile-dropdown {
+    list-style-type: none;
+    margin: 0rem 1rem 0rem 1rem;
+    padding: 1rem 0rem 1rem 0rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.24);
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #FFFFFF;
+    min-width: 80px;
+}
+
+.icon .profile-dropdown li{
+    cursor: pointer;
+}
+
+.icon .profile-dropdown a {
+    color: #004EA2;
+    padding: 10px 15px;
+    margin:0;
+    text-decoration: none;
+    display: flex;
+    text-align: left;
+    font-size: 14px;
+    background-color: #FFFFFF;
+    font-weight: 400;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.icon .profile-dropdown a:hover {
+    background-color: #7375773b;
+    color: #004EA2;
+}
+.icon .profile:hover .profile-dropdown {
+    display: block;
+}
+
+.icon .profile .icons-drpbtn img {
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+    pointer-events: none;
+    user-select: none;
+}
+
+.login {
+  text-decoration: none;
+  color: #F5F5F5;
+  padding: 10px 20px 10px 20px;
+  border: #004EA2 solid 2px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+.login a {
+  text-decoration: none;
+  color: #004EA2;
+  font-weight: bold;
+  font-size: 14px;
+}
+.signup {
+    border-radius: 10px;
+    border: #004EA2 solid 2px;
+    background-color: #004EA2;
+    padding: 10px 20px 10px 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.24);
+}
+.signup a {
+    font-size: 14px;
+    font-weight: bold;
+    color: #F5F5F5;
+    text-decoration: none;
+    font-weight: bold;
+}
+.signup:hover, .login:hover{
+    transform: scale(0.96);
+    box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.25);
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    animation: fadeIn 0.3s ease;
+}
+.modal-overlay.show {
+    display: flex;
+}
+.modal {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+    transform: scale(0.7);
+    animation: modalPop 0.3s ease forwards;
+}
+.modal h3 {
+    margin-top: 0;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+.modal p {
+    color: #666;
+    margin-bottom: 25px;
+    font-size: 16px;
+}
+.modal-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+.modal-btn {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    min-width: 100px;
+}
+.confirm-btn,
+.admin-confirmBtn {
+    background: #e74c3c;
+    color: white;
+}
+.confirm-btn:hover,
+.admin-confirmBtn:hover {
+    background: #c0392b;
+}
+.cancel-btn {
+    background: #95a5a6;
+    color: white;
+}
+.cancel-btn:hover {
+    background: #7f8c8d;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@keyframes modalPop {
+    to { transform: scale(1); }
+}
+.loading {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #e74c3c;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-right: 10px;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.Login_Signup {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-left:0;
+}
+

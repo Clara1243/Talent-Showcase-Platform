@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.discussion-container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.discussion-container h1 {
+    color: #004EA2;
+    margin-bottom: 30px;
+}
+
+
+.status.error {
+    color: #b8191c;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 6px;
+    background-color:  #f8d7da;
+}
+
+.status.success {
+    color: #155724;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: #d4edda;
+}
+
+.post-new-forum {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.post-new-forum label {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    color: #004EA2;
+    text-transform: uppercase;
+}
+
+.post-new-forum input[type="text"],
+.post-new-forum textarea {
+    width: 100%;
+    margin-top: 15px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.post-new-forum button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.post-new-forum button[type="submit"] {
+    background-color: #004EA2;    
+    border-radius: 10px;
+    border: #004EA2 solid 2px;
+    color: #f0f0f0;
+    padding: 10px 20px 10px 20px;
+}
+
+.post-new-forum button[type="reset"] {
+    background-color: #f4f4f4;
+    color: #004EA2;
+    padding: 10px 20px 10px 20px;
+    border: #004EA2 solid 2px;
+    border-radius: 10px;
+}
+
+.post-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.post-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.post-title {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+}
+
+.post-meta {
+    color: #666;
+    font-size: 0.9em;
+}
+
+.post-content {
+    margin: 15px 0;
+    line-height: 1.6;
+    color: #555;
+}
+
+.post-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+}
+
+.like-form {
+    display: inline;
+}
+
+.like-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 8px 12px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+.like-button:hover {
+    background: #f0f0f0;
+}
+
+.like-button.liked {
+    color: #1877f2;
+    background: #e7f3ff;
+}
+
+.like-button.liked:hover {
+    background: #d4edda;
+}
+
+.like-icon {
+    font-size: 16px;
+}
+
+.like-count {
+    font-weight: 500;
+}
+
+.no-posts {
+    text-align: center;
+    color: #666;
+    font-style: italic;
+    padding: 40px 20px;
+}
+.comment-section {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+}
+.comment-form {
+    margin-bottom: 15px;
+}
+.comment-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: vertical;
+    min-height: 60px;
+}
+.comment-submit {
+    margin-top: 8px;
+    padding: 8px 16px;
+    background: #1877f2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.comment-submit:hover {
+    background: #166fe5;
+}
+.comment-item {
+    background: #f8f9fa;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+.comment-author {
+    font-weight: bold;
+    color: #1877f2;
+    font-size: 0.9em;
+}
+.comment-date {
+    color: #666;
+    font-size: 0.8em;
+    margin-left: 10px;
+}
+.comment-text {
+    margin-top: 5px;
+    color: #333;
+}
